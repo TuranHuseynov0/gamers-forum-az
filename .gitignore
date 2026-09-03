@@ -1,0 +1,47 @@
+## Visual Studio Build və Kompilyasiya Çıxışları (Olmamalıdır)
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+build/
+
+## Visual Studio-nun Şəxsi İdarəetmə Qovluqları
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+## İstifadəçi Vəziyyəti Faylları (User state files)
+*.rsuser
+*.suo
+*.user
+*.userprefs
+
+## Məxfilik və Konfiqurasiya Faylları (Vacibdir!)
+# Əgər canlı parollarınızı appsettings.json-da saxlayırsınızsa, onu da daxil edə bilərsiniz.
+# Amma adətən yalnız local/development parametrləri saxlayan fayllar gizlədilir:
+appsettings.Development.json
+appsettings.Local.json
+*.pem
+*.pfx
+
+## Entity Framework Core / Database Faylları
+*.db
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+## Node.js / Front-end paketləri (Əgər layihədə frontend üçün npm istifadə edirsinizsə)
+node_modules/
+npm-debug.log*
+
+## Əməliyyat Sisteminin Yaratdığı Xüsusi Fayllar
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Əsas konfiqurasiya faylını gizlədirik
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
