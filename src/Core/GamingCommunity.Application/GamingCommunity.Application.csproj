@@ -17,4 +17,9 @@
     <ProjectReference Include="..\..\Infrastructure\GamingCommunity.Persistence\GamingCommunity.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DTOs\Requests\Forums\" />
+    <Folder Include="DTOs\Responses\Forums\" />
+  </ItemGroup>
+
 </Project>

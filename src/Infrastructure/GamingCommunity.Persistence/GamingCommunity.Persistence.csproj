@@ -21,4 +21,8 @@
     <ProjectReference Include="..\..\Core\GamingCommunity.Domain\GamingCommunity.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+
 </Project>

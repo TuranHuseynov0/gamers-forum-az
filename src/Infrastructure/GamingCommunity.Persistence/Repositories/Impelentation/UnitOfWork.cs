@@ -55,18 +55,14 @@ namespace GamingCommunity.Persistence.Repositories.Impelentation
 
         public async Task RollbackTransactionAsync(CancellationToken cancellationToken = default)
         {
-            if (_transaction is null)
-            {
-                return;
-            }
-
+            if (_transaction is null) return;
             try
             {
                 await _transaction.RollbackAsync(cancellationToken);
             }
             finally
             {
-                await _context.DisposeAsync();
+                await _transaction.DisposeAsync();
                 _transaction = null;
             }
         }
