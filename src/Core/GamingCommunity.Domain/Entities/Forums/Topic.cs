@@ -17,7 +17,7 @@ namespace GamingCommunity.Domain.Entities.Forums
 
         //Author Relation
         public Guid UserId { get; set; }
-        public User User { get; set; } = null!;
+        public AppUser User { get; set; } = null!;
 
 
         // One topic to many reply

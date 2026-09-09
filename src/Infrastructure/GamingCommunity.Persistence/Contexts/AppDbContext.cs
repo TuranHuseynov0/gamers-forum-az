@@ -1,5 +1,5 @@
 
-using GamingCommunity.Domain.Entities.Forum;
+
 using GamingCommunity.Domain.Entities.Forums;
 using GamingCommunity.Domain.Entities.Users;
 using Microsoft.AspNetCore.Identity;
@@ -11,10 +11,10 @@ namespace GamingCommunity.Persistence.Contexts;
 public class AppDbContext(DbContextOptions<AppDbContext> options)
     : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>(options)
 {
-    public DbSet<ForumTopic> ForumTopics => Set<ForumTopic>();
-    public DbSet<ForumReply> ForumReplies => Set<ForumReply>();
-    public DbSet<TopicVote> TopicVotes => Set<TopicVote>();
-    public DbSet<ReplyVote> ReplyVotes => Set<ReplyVote>();
+    public DbSet<Topic> ForumTopics => Set<Topic>();
+    public DbSet<Reply> ForumReplies => Set<Reply>();
+    public DbSet<Vote> TopicVotes => Set<Vote>();
+    public DbSet<Category> ReplyVotes => Set<Category>();
 
 
     protected override void OnModelCreating(ModelBuilder builder)
