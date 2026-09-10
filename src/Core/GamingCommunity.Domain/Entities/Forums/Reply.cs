@@ -19,6 +19,7 @@ namespace GamingCommunity.Domain.Entities.Forums
         // Self relation
         public Guid? ParentReplyId { get; set; }
         public Reply? ParentReply { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public ICollection<Reply> ChildReplies { get; set; } = new List<Reply>();
     }
 }

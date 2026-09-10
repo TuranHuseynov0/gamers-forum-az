@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GamingCommunity.Application.DTOs.Requests.Forums
+﻿namespace GamingCommunity.Application.DTOs.Requests.Forums
 {
     public class CreateReplyRequest
     {

@@ -16,8 +16,8 @@ namespace GamingCommunity.Persistence.Configurations
                    .IsRequired();
 
             builder.ToTable(t => t.HasCheckConstraint(
-                "CK_Vote_Value",
-                "[Value] IN (1, -1)"));
+                    "CK_Vote_Value",
+                    "\"Value\" IN (1, -1)"));
 
             builder.HasIndex(v => new { v.UserId, v.TargetType, v.TargetId })
                    .IsUnique();
