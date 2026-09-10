@@ -3,6 +3,6 @@
     public enum VoteType
     {
         Upvote,
-        DownVote  
+        Downvote  
     }
 }

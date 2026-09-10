@@ -14,11 +14,12 @@ namespace GamingCommunity.Domain.Entities.Forums
 
         // Author relation
         public Guid UserId { get; set; }
-        public User User { get; set; } = null!;
+        public AppUser User { get; set; } = null!;
 
         // Self relation
         public Guid? ParentReplyId { get; set; }
         public Reply? ParentReply { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public ICollection<Reply> ChildReplies { get; set; } = new List<Reply>();
     }
 }

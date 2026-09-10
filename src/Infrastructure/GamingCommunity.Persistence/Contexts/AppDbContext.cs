@@ -11,10 +11,10 @@ namespace GamingCommunity.Persistence.Contexts;
 public class AppDbContext(DbContextOptions<AppDbContext> options)
     : IdentityDbContext<AppUser, IdentityRole<Guid>, Guid>(options)
 {
-    public DbSet<Topic> ForumTopics => Set<Topic>();
-    public DbSet<Reply> ForumReplies => Set<Reply>();
-    public DbSet<Vote> TopicVotes => Set<Vote>();
-    public DbSet<Category> ReplyVotes => Set<Category>();
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<Topic> Topic { get; set; }
+    public DbSet<Reply> Reply { get; set; }
+    public DbSet<Vote> Votes { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)

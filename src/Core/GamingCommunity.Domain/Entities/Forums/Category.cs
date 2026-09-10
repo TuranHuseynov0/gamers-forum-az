@@ -1,5 +1,4 @@
 ﻿using GamingCommunity.Domain.Common;
-using System.Reflection.Metadata.Ecma335;
 
 namespace GamingCommunity.Domain.Entities.Forums
 {
